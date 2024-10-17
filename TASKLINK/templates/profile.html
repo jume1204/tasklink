@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - TaskLink</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between">
+        <h2>Mi Perfil</h2>
+        <a href="/register" class="btn btn-outline-secondary">Editar Perfil</a>
+      </div>
+
+      <!-- Información del Perfil -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-3 text-center">
+              <img
+                src="/static/images/profileicon.png"
+                alt="Foto de Perfil"
+                class="img-fluid rounded-circle"
+                style="width: 150px; height: 150px; object-fit: cover"
+              />
+              <br />
+              <button class="btn btn-sm btn-outline-primary mt-2">
+                Cambiar Foto
+              </button>
+            </div>
+            <div class="col-md-9">
+              <h4>Nombre del Usuario</h4>
+              <p>
+                Descripción del usuario. Aquí puedes añadir una breve
+                introducción o información sobre ti.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de Fotos -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4>Mis Fotos</h4>
+          <div class="d-flex">
+            <div class="profile-photo">
+              <img
+                src="/static/images/default-image.jpg"
+                class="img-fluid"
+                style="
+                  width: 100px;
+                  height: 100px;
+                  object-fit: cover;
+                  margin-right: 10px;
+                "
+              />
+            </div>
+            <label for="upload-photo" class="upload-photo-label">
+              <img
+                src="/static/images/plus.png"
+                alt="Agregar Foto"
+                class="img-fluid"
+                style="width: 50px; height: 50px; cursor: pointer"
+              />
+            </label>
+            <input type="file" id="upload-photo" style="display: none" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección de Tareas Publicadas -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4>Mis Tareas Publicadas</h4>
+          <div class="task-list">
+            <div
+              class="task-item d-flex justify-content-between align-items-center mb-3"
+            >
+              <div>
+                <h5>Tarea Ejemplo 1</h5>
+                <span class="badge badge-success">Abierta</span>
+              </div>
+              <div>
+                <button class="btn btn-sm btn-outline-info mr-2">
+                  <i class="fas fa-pencil-alt"></i> Editar
+                </button>
+                <button class="btn btn-sm btn-outline-danger">
+                  <i class="fas fa-times"></i> Eliminar
+                </button>
+              </div>
+            </div>
+            <div
+              class="task-item d-flex justify-content-between align-items-center mb-3"
+            >
+              <div>
+                <h5>Tarea Ejemplo 2</h5>
+                <span class="badge badge-secondary">Cerrada</span>
+              </div>
+              <div>
+                <button class="btn btn-sm btn-outline-info mr-2">
+                  <i class="fas fa-pencil-alt"></i> Editar
+                </button>
+                <button class="btn btn-sm btn-outline-danger">
+                  <i class="fas fa-times"></i> Eliminar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sección de Reseñas -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4>Reseñas</h4>
+          <div class="review">
+            <h5 class="task-title">Título de la Tarea: Limpieza de Jardín</h5>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>☆</span>
+              <!-- Ejemplo de 4 estrellas -->
+            </div>
+            <p>
+              "El tasker fue puntual y dejó el jardín impecable. ¡Muy
+              recomendado!"
+            </p>
+            <small class="text-muted">Usuario: Carlos Pérez</small>
+            <hr />
+          </div>
+          <div class="review">
+            <h5 class="task-title">Título de la Tarea: Montaje de Muebles</h5>
+            <div class="stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span
+              ><span>★</span>
+              <!-- Ejemplo de 5 estrellas -->
+            </div>
+            <p>
+              "Excelente trabajo montando los muebles, fue rápido y eficiente."
+            </p>
+            <small class="text-muted">Usuario: María García</small>
+            <hr />
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap JS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+  </body>
+</html>

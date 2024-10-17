@@ -1,0 +1,16 @@
+.upload-photo-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  padding: 10px;
+  margin-left: 10px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-photo-label:hover {
+  background-color: #f0f0f0;
+}

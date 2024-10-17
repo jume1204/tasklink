@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscar Tareas - TaskLink</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">TaskLink</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/task">Postea una tarea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tasks">Busca tareas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2 class="text-center">Todas las tareas disponibles</h2>
+      <div class="list-group mt-4">
+        <!-- Ejemplo de tarea -->
+        <a href="#" class="list-group-item list-group-item-action">
+          <h5 class="mb-1">Limpieza de jardín</h5>
+          <p class="mb-1">
+            Necesito a alguien que pueda limpiar mi jardín el próximo fin de
+            semana.
+          </p>
+          <small>Publicado por: Usuario123</small>
+        </a>
+        <!-- Aquí irán todas las tareas dinámicamente -->
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

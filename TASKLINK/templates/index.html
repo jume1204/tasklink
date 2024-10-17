@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskLink</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="icon" href="" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TaskLink</a>
+        <!-- Botón actualizado para redirigir a task.html -->
+        <a href="/task" class="btn btn-primary">Postea una tarea</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorías
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Cocina</a></li>
+                <li><a class="dropdown-item" href="#">Limpieza</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Otro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tasks">Busca tareas</a>
+            </li>
+          </ul>
+
+          <div class="d-flex ml-auto">
+            <a href="/register" class="btn btn-outline-info mr-2"
+              >Crear una cuenta</a
+            >
+
+            <!-- Botón para iniciar sesión -->
+            <a href="/login" class="btn btn-outline-dark" type="button"
+              >Iniciar Sesión</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero bg-light text-center py-5">
+      <div class="container">
+        <h1 class="display-4">
+          Encuentra ayuda para cualquier tarea, ¡rápido y fácil!
+        </h1>
+        <p class="lead">
+          TaskLink te conecta con profesionales para hacer tu vida más simple.
+        </p>
+        <!-- Botón actualizado para redirigir a task.html -->
+        <a href="/task" class="btn btn-primary btn-lg mr-2">Postea una tarea</a>
+        <a href="#" class="btn btn-outline-secondary btn-lg"
+          >Explora categorías</a
+        >
+      </div>
+    </div>
+
+    <!-- Section: Why TaskLink -->
+    <div class="container my-5">
+      <h2 class="text-center">¿Por qué elegir TaskLink?</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-3">
+          <img
+            src="/static/images/rapidoyfacil.jpg"
+            alt="Rápido y fácil"
+            class="img-fluid"
+            style="width: 250px; height: 230px"
+          />
+          <h4>Rápido y fácil</h4>
+          <p>Publica tu tarea en minutos y recibe ofertas al instante.</p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="/static/images/seguroyconfiable.jpg"
+            alt="Seguro y confiable"
+            class="img-fluid"
+            style="width: 250px; height: 230px"
+          />
+          <h4>Seguro y confiable</h4>
+          <p>Todos nuestros taskers están verificados para tu tranquilidad.</p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="/static/images/opcionesflexibles.jpg"
+            alt="Opciones flexibles"
+            class="img-fluid"
+            style="width: 250px; height: 230px"
+          />
+          <h4>Opciones flexibles</h4>
+          <p>Encuentra servicios desde limpieza hasta reparaciones.</p>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="/static/images/pagoseguro.jpg"
+            alt="Pago seguro"
+            class="img-fluid"
+            style="width: 250px; height: 230px"
+          />
+          <h4>Pago seguro</h4>
+          <p>Protección de pagos hasta que tu tarea esté completada.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Integrar Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
